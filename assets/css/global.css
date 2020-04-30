@@ -1,0 +1,210 @@
+@charset "UTF-8";
+/* RESET DE BASE */
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: philosopher,'Raleway', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+/*FIN RESET DE BASE */
+.container-fluid {
+  height: 100vh; }
+
+/* DEBUT HEADER */
+header {
+  width: 100%;
+  height: auto;
+  background: #2980B9;
+  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); }
+
+/* DEBUT LOGO */
+.logo img {
+  background-color: transparent;
+  transition: transform 2s linear; }
+  .logo img:hover {
+    transform: rotateZ(380deg); }
+.logo .img-thumbnail {
+  border: none; }
+
+/* FIN LOGO */
+/* DEBUT NAV */
+nav {
+  background-color: transparent;
+  color: white;
+  margin-top: 3rem; }
+
+.navbar-collapse {
+  background-color: transparent;
+  color: white; }
+
+.collapse {
+  justify-content: flex-end; }
+
+.trait {
+  font-weight: 900;
+  color: #DA9E00;
+  background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 85%, #f9ca24 4px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 2s; }
+
+.trait:hover {
+  color: #f9ca24;
+  background-size: 100% 100%; }
+
+/* FIN NAV */
+/* DEBUT BANNIERE */
+.inner-banner {
+  width: 90%;
+  margin: auto;
+  color: #ffffff;
+  text-shadow: 0.063rem 0.063rem 1.25rem #000000;
+  padding: 5rem;
+  text-align: center; }
+
+/* FIN BANNIERE */
+/* DEBUT SEARCH BAR  */
+.search {
+  width: 100%;
+  margin: auto;
+  padding-bottom: 1rem; }
+  .search form {
+    margin: auto; }
+  .search .search-flex {
+    display: flex;
+    margin: auto; }
+    .search .search-flex .col-md-3 {
+      padding: 0; }
+      .search .search-flex .col-md-3 .search-input {
+        border-radius: 0;
+        height: 3rem;
+        line-height: 1.5; }
+    .search .search-flex .search-btn {
+      background-color: #f9ca24; }
+      .search .search-flex .search-btn:hover {
+        color: white;
+        background-color: #c23616; }
+
+/* FIN SEARCH BAR  */
+/* FIN HEADER  */
+/*Début contenu de la page */
+.container h2 {
+  padding: 1rem;
+  text-align: center; }
+
+.carousel-item img {
+  width: 350rem;
+  height: 30rem; }
+
+.separator {
+  height: 0.188rem;
+  width: 5%;
+  border: none;
+  box-shadow: none;
+  background-color: #3498D8; }
+
+/* Fin contenu de la page */
+/* Début Footer */
+footer {
+  padding: 2rem;
+  height: auto;
+  background-color: #192a56; }
+  footer ul li {
+    padding: .2rem 0; }
+  footer .contact span {
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: .2rem; }
+  footer .contact a {
+    color: white; }
+  footer .contact li {
+    list-style: none; }
+  footer .mentions span {
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: .2rem; }
+  footer .mentions a {
+    color: white; }
+  footer .mentions li {
+    list-style: none; }
+  footer .social span {
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: .2rem; }
+  footer .social a {
+    color: white; }
+    footer .social a:hover {
+      text-decoration: none; }
+  footer .social li {
+    list-style: none; }
+
+/* Fin Footer */
+/* Début lbv catégorie*/
+.categories {
+  display: block;
+  padding: 2rem; }
+  .categories h2 {
+    text-align: center; }
+
+.categories_name {
+  background-color: #2f3640;
+  padding: 1rem; }
+  .categories_name a {
+    text-decoration: none;
+    color: white; }
+    .categories_name a:hover {
+      font-weight: bold; }
+
+/* RESPONSIVE HEADER*/
+@media (max-width: 767.98px) {
+  header .row {
+    display: flex;
+    flex-direction: row-reverse; }
+    header .row .logo {
+      width: 50%;
+      margin: auto; }
+    header .row nav {
+      width: 100%; }
+  header .search-flex {
+    display: flex;
+    flex-wrap: wrap; }
+    header .search-flex .search-btn {
+      margin-top: .2rem;
+      width: 100%; } }
+/*FIN RESPONSIVE */
+@media (max-width: 575.98px) {
+  header .row {
+    display: flex;
+    flex-direction: row-reverse; }
+    header .row .logo {
+      width: 50%;
+      margin: auto; }
+    header .row nav {
+      width: 100%; }
+  header .search-flex {
+    display: flex;
+    flex-wrap: wrap; }
+    header .search-flex .search-btn {
+      margin-top: .2rem;
+      width: 100%; } }
+@media (max-width: 991.98px) {
+  header .row {
+    display: flex;
+    flex-direction: row-reverse; }
+    header .row .logo {
+      width: 50%;
+      margin: auto; }
+    header .row nav {
+      width: 100%; }
+  header .search-flex {
+    display: flex;
+    flex-wrap: wrap; }
+    header .search-flex .search-btn {
+      margin-top: .2rem;
+      width: 100%; } }
+/* FIN RESPONSIVE*/
+
+/*# sourceMappingURL=global.css.map */
